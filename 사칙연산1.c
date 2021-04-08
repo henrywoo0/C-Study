@@ -16,9 +16,14 @@ int mul(int a, int b)
 	return a * b;
 }
 
-int div(int a, int b)
+double div(int a, int b)
 {
-	return a / b;
+	if (b == 0)
+	{
+		printf("\nerror\n");
+		exit(1);
+	}
+	return (double)a / b;
 }
 
 int main(void)
@@ -29,7 +34,7 @@ int main(void)
 	printf("\n%d + %d = %d", a, b, add(a, b));
 	printf("\n%d - %d = %d", a, b, sub(a, b));
 	printf("\n%d * %d = %d", a, b, mul(a, b));
-	printf("\n%d / %d = %d", a, b, div(a, b));
+	printf("\n%d / %d = %.2lf", a, b, div(a, b));
 
 	return 0;
 }
