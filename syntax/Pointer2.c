@@ -10,7 +10,9 @@ int main(void)
 	printf("내용(Value)   : %d, %d\n", *p, n1);
 
 	for (int i = 0; i < 5; i++)
+	{
 		printf("%4d", (*p)++);
+	}
 
 	printf("%4d\n", n1);
 
