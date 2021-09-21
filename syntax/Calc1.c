@@ -1,21 +1,25 @@
 #include <stdio.h>
 #pragma warning (disable : 4996)
 
+// 더하기 함수
 int add(int a, int b)
 {
 	return a + b;
 }
 
+// 빼기 함수
 int sub(int a, int b)
 {
 	return a - b;
 }
 
+// 곱하기 함수
 int mul(int a, int b)
 {
 	return a * b;
 }
 
+// 나누기 
 double div(int a, int b)
 {
 	if (b == 0)
